@@ -521,6 +521,14 @@
       .flow-step { padding: 0.9rem 1rem; }
 
       footer { padding: 2rem 1.25rem; }
+
+      /* inline-styled grids */
+      .costs-grid { grid-template-columns: 1fr !important; }
+      .costs-grid > div { border-right: none !important; }
+
+      .roi-grid { grid-template-columns: 1fr !important; }
+
+      .includes-grid { grid-template-columns: 1fr !important; }
     }
   </style>
 </head>
@@ -678,10 +686,10 @@
         <div class="icon-box">📊</div>
         <h3 style="font-size:1.15rem;font-weight:800;margin-bottom:0.75rem;">CRM + Enrutamiento geográfico</h3>
         <ul class="checklist" style="gap:0.5rem;">
-          <li>WhatsApp + Instagram + Facebook en <strong>una sola bandeja de entrada</strong></li>
-          <li>Registro completo de <strong>todos los leads</strong> — calificados y no calificados</li>
-          <li>Pregunta la provincia al inicio → <strong>deriva automáticamente a la agencia local</strong> (Tucumán, La Rioja, Catamarca, Neuquén, San Luis)</li>
-          <li>Dashboard mensual: <strong>de qué provincias llegan más consultas</strong> para planificar giras</li>
+          <li><strong>Una bandeja unificada</strong> — WhatsApp, Instagram y Facebook</li>
+          <li><strong>Todos los leads registrados</strong> — calificados y no calificados</li>
+          <li><strong>Deriva automática</strong> a la agencia local por provincia</li>
+          <li><strong>Dashboard mensual</strong> de provincias con más consultas</li>
         </ul>
       </div>
 
@@ -689,9 +697,9 @@
         <div class="icon-box">🎵</div>
         <h3 style="font-size:1.15rem;font-weight:800;margin-bottom:0.75rem;">TikTok → WhatsApp</h3>
         <ul class="checklist" style="gap:0.5rem;">
-          <li>TikTok tiene una función nativa de <strong>mensaje automático de bienvenida</strong> para nuevos chats</li>
-          <li>Configuramos ese mensaje para que <strong>derive directamente al WhatsApp oficial</strong> de Rispoli</li>
-          <li>Sin integraciones externas — <strong>cero costo adicional</strong>, funciona de forma nativa dentro de TikTok</li>
+          <li><strong>Mensaje automático de bienvenida</strong> nativo en TikTok DMs</li>
+          <li>Deriva al lead directo al <strong>WhatsApp oficial de Rispoli</strong></li>
+          <li>Sin APIs externas — <strong>cero costo adicional</strong></li>
         </ul>
         <p style="font-size:0.78rem;color:var(--text-muted);margin-top:1rem;font-style:italic;">Nota: TikTok no permite integraciones vía API de terceros para mensajería — esta es la solución más robusta y estable disponible.</p>
       </div>
@@ -1031,7 +1039,7 @@
         </div>
       </div>
       <div class="price-divider"></div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.5rem 2rem;">
+      <div class="includes-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:0.5rem 2rem;">
         <div class="checklist" style="gap:0.5rem;display:flex;flex-direction:column;">
           <div style="display:flex;align-items:flex-start;gap:0.75rem;font-size:0.92rem;color:var(--text-secondary);"><span style="color:var(--accent);font-weight:700;flex-shrink:0;">→</span><span><strong style="color:var(--text);">Agente IA</strong> entrenado con los paquetes de Rispoli</span></div>
           <div style="display:flex;align-items:flex-start;gap:0.75rem;font-size:0.92rem;color:var(--text-secondary);"><span style="color:var(--accent);font-weight:700;flex-shrink:0;">→</span><span><strong style="color:var(--text);">CRM centralizado</strong> — WhatsApp, Instagram, TikTok</span></div>
@@ -1040,7 +1048,7 @@
         </div>
         <div style="display:flex;flex-direction:column;gap:0.5rem;">
           <div style="display:flex;align-items:flex-start;gap:0.75rem;font-size:0.92rem;color:var(--text-secondary);"><span style="color:var(--accent);font-weight:700;flex-shrink:0;">→</span><span><strong style="color:var(--text);">WhatsApp Business API</strong> oficial</span></div>
-          <div style="display:flex;align-items:flex-start;gap:0.75rem;font-size:0.92rem;color:var(--text-secondary);"><span style="color:var(--accent);font-weight:700;flex-shrink:0;">→</span><span><strong style="color:var(--text);">Soporte y monitoreo 12 meses</strong> — servidores, sistema, agente, respuestas, interfaz y usuarios</span></div>
+          <div style="display:flex;align-items:flex-start;gap:0.75rem;font-size:0.92rem;color:var(--text-secondary);"><span style="color:var(--accent);font-weight:700;flex-shrink:0;">→</span><span><strong style="color:var(--text);">Soporte y monitoreo</strong> incluidos 12 meses</span></div>
           <div style="display:flex;align-items:flex-start;gap:0.75rem;font-size:0.92rem;color:var(--text-secondary);"><span style="color:var(--accent);font-weight:700;flex-shrink:0;">→</span><span><strong style="color:var(--text);">Capacitación</strong> al equipo incluida</span></div>
         </div>
       </div>
@@ -1116,7 +1124,7 @@
           <h3 style="font-size:0.9rem;font-weight:700;color:var(--text);">Costos mensuales operativos</h3>
           <p style="font-size:0.8rem;color:var(--text-muted);margin-top:0.2rem;">Transparencia total — sin sorpresas</p>
         </div>
-        <div style="display:grid;grid-template-columns:repeat(2,1fr);padding:0;">
+        <div class="costs-grid" style="display:grid;grid-template-columns:repeat(2,1fr);padding:0;">
           <div style="padding:0.85rem 1.5rem;border-bottom:1px solid var(--border);border-right:1px solid var(--border);">
             <div style="display:flex;justify-content:space-between;align-items:center;">
               <span style="font-size:0.88rem;color:var(--text-secondary);">Servidor VPS (aloja el CRM y los agentes)</span>
@@ -1154,7 +1162,7 @@
       <div class="card card-highlight" style="border-color:var(--border-accent);box-shadow:0 0 60px rgba(193,95,60,0.15);padding:2rem;">
         <p style="font-size:0.72rem;color:var(--accent);font-weight:700;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.75rem;">Retorno sobre la inversión</p>
         <h3 style="font-size:1.4rem;font-weight:900;margin-bottom:0.75rem;letter-spacing:-0.02em;">Si el sistema recupera <span class="gradient-text">una sola venta por mes</span> que hoy se pierde por falta de respuesta o seguimiento:</h3>
-        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.5rem;">
+        <div class="roi-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.5rem;">
           <div style="padding:1rem;background:var(--bg-elevated);border:1px solid var(--border);border-radius:12px;text-align:center;">
             <div style="font-size:1.6rem;font-weight:900;color:var(--text);letter-spacing:-0.02em;">~$5.000</div>
             <div style="font-size:0.72rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.06em;margin-top:0.3rem;">USD · ticket promedio</div>
